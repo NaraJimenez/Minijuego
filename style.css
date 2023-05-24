@@ -1,0 +1,180 @@
+/*STYLE DEL JUEGO*/
+
+/*Letra del juego*/
+@import url('https://fonts.cdnfonts.com/css/atari');
+
+*{
+    background-color: rgb(255, 235, 181);
+    font-family: Atari, sans-serif;
+}
+
+.contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    font-family: 'Atari, sans-serif';
+    margin-right: 30px;
+    
+}
+
+.lateralIz{
+    height: 100px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+}
+
+ .centro {
+    height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.lateralDer{
+  
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+.startButton {
+    cursor: pointer;
+    position: relative;
+  }
+
+.startButton  .imageHover{
+    position: absolute;
+display: none;
+
+}
+
+.grid {
+    width: 600px;
+    height: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black;
+    
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+}
+
+.pasillo {
+    background-image: url("./media/Normal.png"); 
+    background-size:cover;
+}
+
+.puntaIz{
+    background-image: url("./media/esquinaArriba.png"); 
+    background-size:cover;
+}
+
+.puntaDer{
+    background-image: url("./media/esquinaDer.png"); 
+    background-size:cover;
+}
+
+.puntaBajoIz {
+    background-image: url("./media/esquinaBajoIz.png"); 
+    background-size:cover;
+}
+
+.puntaBajoDer {
+    background-image: url("./media/esquinaBajoDer.png"); 
+    background-size:cover;
+}
+
+.lateralArriba{
+    background-image: url("./media/abajo.png"); 
+    background-size:cover;
+}
+
+.lateralDerecho{
+    background-image: url("./media/lateralIz.png"); 
+    background-size:cover;
+}
+
+.lateralBajo{
+    background-image: url("./media/lateralArriba.png"); 
+    background-size:cover;
+}
+
+.lateralIzquierdo{
+    background-image: url("./media/lateralDer.png"); 
+    background-size:cover;
+}
+
+.rota {
+    background-image: url("./media/rota.png"); 
+    background-size:cover;
+}
+
+.wall {
+    background-image: url("./media/abajo.png"); 
+    background-size:cover;
+    
+}
+
+.led {
+    background-image: url("./media/luzApagadaTile.png");
+    background-size:cover;
+  
+}
+
+.prota {
+    background-image: url("./media/TileFront.png");
+    background-size:cover;
+    
+}
+.prota-back {
+    background-image: url("./media/TileBack.png");
+    background-size:cover;
+}
+.prota-der {
+    background-image: url("./media/TileDer.png");
+    background-size:cover;  
+}
+.prota-iz {
+    background-image: url("./media/TileIz.png");
+    background-size:cover;
+    
+}
+
+.luz1 {
+    background-image: url("./media/luzNormalTile.png");
+    background-size:cover;
+    /* /* Use background-size:contain to fit the entire image into the div's space. This 
+     wil make the image zoom in/out as needed to completely fit.
+     Or, use background-size:cover to scale the image to fit the space of the div. */
+  /*background-size:cover; */
+}
+
+.martillo{
+    background-image: url("./media/martilloTile.png");
+    background-size:cover;
+}
+
+.Cambiada{
+    background-image: url("./media/luzEncendidaTile.png");
+    background-size:cover;
+}
+
+dialog[open], dialog[open] > p, dialog[open] > h2{
+    margin-top: auto;
+    background-color: rgb(80, 189, 131);
+    top: 20%;
+
+  
+}
+
+#finalTiempo, #finalScore, #cambiada, #apagada, #normal, #martillos, #keyb1, #keyb2, #tituloIns{
+    background-color: rgb(80, 189, 131);
+}
